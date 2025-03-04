@@ -34,20 +34,25 @@ for (let button of buttons) {
 
 
 
-        let cards = document.querySelectorAll("h2");
-        let title = cards.innerText;
-        // for(let card of cards){
-        //     card.addEventListener('click',function(event){
-        //       event.target.querySelector("h2").innerText;
-        //     })
-        // }
         
+        // let cards = document.querySelectorAll('.cards');
+        // for(let i = 0; i < cards.length ; i++){
+        //     let card = cards[i];
+        //     let currentElement = event.target;
+        //     while(currentElement){
+        //         if(currentElement === card){
+        //             let title = card.querySelector.innerText;
+                    
+        //         }
+        //         currentElement = currentElement.parentElement;
+        //     }
+        // }
 
-        const historyContainer = document.getElementById('history-container');
+        let historyContainer = document.getElementById('history-container');
         // const history = document.getElementById('history');
         
         let currentTime = new Date().toLocaleTimeString();
-        historyContainer.innerText = `You have completed the task ${title} at ${currentTime}`
+        historyContainer.innerHTML = `You have completed the task "${title}" at ${currentTime}`
 
 
 
