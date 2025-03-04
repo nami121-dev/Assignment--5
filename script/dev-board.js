@@ -5,10 +5,30 @@ for(let button of buttons){
         alert('Board updated successfully');
         event.target.disabled = true;
 
-        const taskBox = document.getElementById('tasks-box');
+        let taskNumber = document.getElementById('task-number');
+        let currentNumber = parseInt(taskNumber.innerText);
         
-        for( let i = 5; i >= 0; i--){
-            console.log(i,taskBox);
-        }
+        
+           
+                if(currentNumber > 0){
+                    taskNumber.innerText = currentNumber - 1;
+
+                }
+
+                let headerNumber = document.getElementById('header-number');
+                let number = parseInt(headerNumber.innerText);
+
+                // console.log(typeof number);
+                 if(number > 0){
+                    headerNumber.innerText = number + 1;
+                 }
+
+                
+
+
+        
+                
+            
+       
     })
 }
