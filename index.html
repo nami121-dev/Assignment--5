@@ -8,6 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles/style.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+        
 </head>
 
 <body class="bg-blue-100">
@@ -33,20 +39,20 @@
         </header>
 
 
-        <main>
+        <main class="min-h-screen">
             <section class="bg-blue-100  flex  w-full  mx-auto max-w-[1536px]">
                 <div class=" gap-6  max-w-[1145px] bg-base-100 mt-10 p-8 rounded-xl">
  
                  <div class="grid-container gap-4 my-4">
 
-                    <div class="flex items-center bg-blue-50  h-20 rounded-md p-5 max-w-[265px] ">
+                    <div id="tasks-box" class="flex items-center bg-blue-50  h-20 rounded-md p-5 max-w-[265px] ">
                         <div>
                             <img class="w-4" src="assets/checkbox.png" alt="">
     
                         </div>
                         <div class="ml-5">
                             <h2 class="text-xs">Task Assigned </h2>
-                            <p class="font-bold text-xl">05</p>
+                            <p id="task-number" class="font-bold text-xl ">05</p>
     
                         </div>
                     </div>
@@ -66,8 +72,8 @@
     
                         </div>
                         <div class="ml-5">
-                            <h2 class="text-xs">Task Assigned </h2>
-                            <p class="font-bold text-xl">05</p>
+                            <h2 class="text-xs">Wed, </h2>
+                            <p class="font-bold text-xl">Jul 28 2025 </p>
     
                         </div>
                     </div>
@@ -80,8 +86,8 @@
 
                     <!-- card 1 -->
                 <div class="bg-blue-50  rounded-lg p-6 w-[340px] ">
-                    <button class="bg-white text-xs rounded-md">ShopEase</button>
-                    <h2 class="font-semibold text-sm my-2">Fix Mobile Button Issue </h2>
+                    <button class="bg-white text-xs rounded-md p-2">ShopEase</button>
+                    <h2 class="font-semibold text-md my-2">Fix Mobile Button Issue </h2>
                     <p class="bg-base-100 rounded-md text-xs  text-gray-500 my-2 p-2">Debug using Chrome <br> DevTools, check for overlapping elements...</p>
                     <div class="flex items-end">
                         <div class="mr-6">
@@ -89,41 +95,41 @@
                            <p class="font-semibold text-xs">21 March 2025</p>
                            
                         </div>
-                        <button class="bg-blue-600 btn text-white">Completed</button>
+                        <button class="bg-blue-600 btn text-white btn-completed">Completed</button>
                     </div>
                    </div>
                    <!-- card 2 -->
                    <div class="bg-blue-50  rounded-lg p-6 w-[340px]">
-                    <button class="bg-white text-xs rounded-md">ShopEase</button>
-                    <h2 class="font-semibold text-sm my-2">Fix Mobile Button Issue </h2>
-                    <p class="bg-base-100 rounded-md text-xs  text-gray-500 my-2 p-2">Debug using Chrome <br> DevTools, check for overlapping elements...</p>
+                    <button class="bg-white text-xs rounded-md p-2">CloudSync</button>
+                    <h2 class="font-semibold text-md my-2">Add Dark Mode</h2>
+                    <p class="bg-base-100 rounded-md text-xs  text-gray-500 my-2 p-2">Store the user's preference <br> in localStorage, update CSS variables </p>
                     <div class="flex items-end">
                         <div class="mr-6">
                             <p class="text-gray-500 text-xs my-3">Deadline</p>
                            <p class="font-semibold text-xs">21 March 2025</p>
                            
                         </div>
-                        <button class="bg-blue-600 btn text-white">Completed</button>
+                        <button class="bg-blue-600 btn text-white btn-completed">Completed</button>
                     </div>
                    </div>
                    <!-- card 3 -->
                    <div class="bg-blue-50  rounded-lg p-6 w-[340px]">
-                    <button class="bg-white text-xs rounded-md">ShopEase</button>
-                    <h2 class="font-semibold text-sm my-2">Fix Mobile Button Issue </h2>
-                    <p class="bg-base-100 rounded-md text-xs  text-gray-500 my-2 p-2">Debug using Chrome <br> DevTools, check for overlapping elements...</p>
+                    <button class="bg-white text-xs rounded-md p-2">SwiftPay</button>
+                    <h2 class="font-semibold text-md my-2">Optimize  Home page </h2>
+                    <p class="bg-base-100 rounded-md text-xs  text-gray-500 my-2 p-2">Debug using Chrome <br> DevTools, check for over...  </p>
                     <div class="flex items-end">
                         <div class="mr-6">
                             <p class="text-gray-500 text-xs my-3">Deadline</p>
                            <p class="font-semibold text-xs">21 March 2025</p>
                            
                         </div>
-                        <button class="bg-blue-600 btn text-white">Completed</button>
+                        <button  class="bg-blue-600 btn text-white btn-completed">Completed</button>
                     </div>
                    </div>
                    <!-- card 4 -->
                    <div class="bg-blue-50  rounded-lg p-6 w-[340px]">
-                    <button class="bg-white text-xs rounded-md">ShopEase</button>
-                    <h2 class="font-semibold text-sm my-2">Fix Mobile Button Issue </h2>
+                    <button class="bg-white text-xs rounded-md p-2">Meta</button>
+                    <h2 class="font-semibold text-md my-2">Add new emoji 🤲 </h2>
                     <p class="bg-base-100 rounded-md text-xs  text-gray-500 my-2 p-2">Debug using Chrome <br> DevTools, check for overlapping elements...</p>
                     <div class="flex items-end">
                         <div class="mr-6">
@@ -131,13 +137,13 @@
                            <p class="font-semibold text-xs">21 March 2025</p>
                            
                         </div>
-                        <button class="bg-blue-600 btn text-white">Completed</button>
+                        <button  class="bg-blue-600 btn text-white btn-completed">Completed</button>
                     </div>
                    </div>
                    <!-- card 5 -->
-                   <div class="bg-blue-50  rounded-lg p-6 w-[340px]">
-                    <button class="bg-white text-xs rounded-md">ShopEase</button>
-                    <h2 class="font-semibold text-sm my-2">Fix Mobile Button Issue </h2>
+                   <div class="bg-blue-50  rounded-lg p-6 w-[340px] ">
+                    <button class="bg-white text-xs rounded-md p-2">Google LLC</button>
+                    <h2 class="font-semibold text-md my-2">Integrate OpenAI API </h2>
                     <p class="bg-base-100 rounded-md text-xs  text-gray-500 my-2 p-2">Debug using Chrome <br> DevTools, check for overlapping elements...</p>
                     <div class="flex items-end">
                         <div class="mr-6">
@@ -145,13 +151,13 @@
                            <p class="font-semibold text-xs">21 March 2025</p>
                            
                         </div>
-                        <button class="bg-blue-600 btn text-white">Completed</button>
+                        <button  class="bg-blue-600 btn text-white btn-completed">Completed</button>
                     </div>
                    </div>
                    <!-- card 6 -->
                    <div class="bg-blue-50  rounded-lg p-6 w-[340px]">
-                    <button class="bg-white text-xs rounded-md">ShopEase</button>
-                    <h2 class="font-semibold text-sm my-2">Fix Mobile Button Issue </h2>
+                    <button class="bg-white text-xs rounded-md p-2">Glassdoar</button>
+                    <h2 class="font-semibold text-md my-2">Improve Job searching </h2>
                     <p class="bg-base-100 rounded-md text-xs  text-gray-500 my-2 p-2">Debug using Chrome <br> DevTools, check for overlapping elements...</p>
                     <div class="flex items-end">
                         <div class="mr-6">
@@ -159,7 +165,7 @@
                            <p class="font-semibold text-xs">21 March 2025</p>
                            
                         </div>
-                        <button class="bg-blue-600 btn text-white">Completed</button>
+                        <button  class="bg-blue-600 btn text-white btn-completed">Completed</button>
                     </div>
                    </div>
     
@@ -168,7 +174,7 @@
 
 
 <!-- right side div -->
-                <div class="bg-base-100 mt-10 rounded-xl ml-8 max-w-[365px] p-4" >
+                <div class="bg-base-100 mt-10 rounded-xl ml-8 w-[365px] p-4" >
                     <div class="text-center">
                      <div class="flex justify-center gap-4">
                          <img src="assets/activity.png" alt="">
@@ -176,9 +182,9 @@
                      </div>
                      <button class="btn bg-blue-600 my-4 text-white rounded-lg">clear history</button>
                      </div>
-                     <p class="bg-blue-50 my-5 p-5 rounded-md">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                     <!-- <p class="bg-blue-50 my-5 p-5 rounded-md">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
                      
-                     <p class="bg-blue-50 p-5 rounded-md">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                     <p class="bg-blue-50 p-5 rounded-md">You have Complete The Task Add Dark Mode at 12:48:15 PM</p> -->
      
      
                     </div>
