@@ -103,4 +103,19 @@ today.appendChild(newDate)
 // console.log(todayDate);
 
 
+// random background color
+document.getElementById('btn-theme').addEventListener('click',function(){
+    const randomNumber = Math.floor(Math.random()*16777215);
+    const randomCode = "#" + randomNumber.toString(16);
+
+    document.body.style.backgroundColor = randomCode;
+})
+
+
+// go to another window
+document.getElementById('box-2').addEventListener('click',function(){
+    window.location.href = "./discover.html"
+})
+
+
 
