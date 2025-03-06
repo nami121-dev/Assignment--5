@@ -13,8 +13,8 @@ for (let button of buttons) {
 
         if (currentNumber > 0) {
             taskNumber.innerText = currentNumber - 1;
-
         }
+
 
         let headerNumber = document.getElementById('header-number');
         let number = parseInt(headerNumber.innerText);
@@ -23,6 +23,23 @@ for (let button of buttons) {
         if (number > 0) {
             headerNumber.innerText = number + 1;
         }
+
+         // History section
+
+         let history = document.getElementById('history-section');
+
+         
+
+         let currentTime = new Date().toLocaleTimeString();
+         let newHistory = document.createElement('p');
+         newHistory.innerHTML = `You have completed the task  at ${currentTime}`
+         history.appendChild(newHistory)
+
+
+
+        
+ 
+        
 
 
 
@@ -61,10 +78,7 @@ for (let button of buttons) {
         //******************************** */ try again*********************************************
 
         // let historyContainer = document.getElementById('history-container');
-        // // const history = document.getElementById('history');
-
-        // let currentTime = new Date().toLocaleTimeString();
-        // historyContainer.innerHTML = `You have completed the task  at ${currentTime}`
+         
 
 
 
