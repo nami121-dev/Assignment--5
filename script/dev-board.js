@@ -82,8 +82,8 @@ for (let button of buttons) {
 }
 
 
-document.getElementById('6th-btn').addEventListener('click', function (event) {
-    event.preventDefault()
+document.getElementById('6th-btn').addEventListener('click', function () {
+    // event.preventDefault()
     alert('congrats!You have completed all the current task')
 })
 
@@ -116,6 +116,7 @@ document.getElementById('btn-theme').addEventListener('click',function(){
 document.getElementById('box-2').addEventListener('click',function(){
     window.location.href = "./discover.html"
 })
+
 
 
 
