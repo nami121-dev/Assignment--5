@@ -26,65 +26,30 @@ for (let button of buttons) {
 
          // History section
 
-         let history = document.getElementById('history-section');
+        //  const titles = document.querySelectorAll('.title');
+        
+        // let index = 0;
+        // let heading = [];
 
+        // if(index < titles.length){
+        //   heading.push(titles[index].innerText) ;
+        //   index++;
+        // }
+       
+           
+
+      
+         
+        
          
 
+
+
+         let history = document.getElementById('history-section');
          let currentTime = new Date().toLocaleTimeString();
          let newHistory = document.createElement('p');
-         newHistory.innerHTML = `You have completed the task  at ${currentTime}`
+         newHistory.innerHTML = `You have completed the task Add Dark Mode  at ${currentTime}`
          history.appendChild(newHistory)
-
-
-
-        
- 
-        
-
-
-
-
-
-
-
-
-
-
-
-
-        //  const historyContainer = document.getElementById('history-container');
-        //  const history = document.getElementById('history');
-        //  history.innerHTML = `
-        //  <p>You have completed the task Add dark mode at date() PM </p>`
-        //  historyContainer.appendChild(history);
-
-
-
-
-        // let cards = document.querySelectorAll('.cards');
-        // for(let i = 0; i < cards.length ; i++){
-        //     let card = cards[i];
-        //     let currentElement = event.target;
-        //     while(currentElement){
-        //         if(currentElement === card){
-        //             let title = card.querySelector.innerText;
-
-        //         }
-        //         currentElement = currentElement.parentElement;
-        //     }
-        // }
-
-
-        //******************************** */ try again*********************************************
-
-        // let historyContainer = document.getElementById('history-container');
-         
-
-
-
-
-
-
 
 
 
@@ -129,6 +94,12 @@ document.getElementById('btn-theme').addEventListener('click',function(){
 // go to another window
 document.getElementById('box-2').addEventListener('click',function(){
     window.location.href = "./discover.html"
+})
+
+// clear history
+ document.getElementById('clear-btn').addEventListener('click',function(){
+    document.querySelector('#history-section').innerText = ''
+
 })
 
 
